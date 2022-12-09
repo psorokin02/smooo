@@ -18,7 +18,7 @@
       <table class="table">
         <tr>
           <th>Номер прибора</th>
-          <th>Время освобождения</th>w
+          <th>Время освобождения</th>
           <th>Номер источника текущей завяки</th>
         </tr>
         <tr v-for="device in smoStatistics.devices" :key="device.id">

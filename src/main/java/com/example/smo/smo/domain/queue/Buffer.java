@@ -16,12 +16,8 @@ public class Buffer {
 
     public boolean add(Task task) {
         if(queue.size() == bufferSize){
-            oldTask = getMostOldTask();
-            oldTask.isRejected = true;
-            addinsted(oldTask, task);
-//            task.isRejected = true;
-//            return false;
-            return true;
+            task.isRejected = true;
+            return false;
         }
         queue.push(task);
         task.isRejected = false;
